@@ -1,0 +1,18 @@
+<!-- # File: templates/add_task.html -->
+
+<!DOCTYPE html>
+ <html>
+ <head>
+     <title>Add Task</title>
+ </head>
+ <body>
+     <h1>Add Task</h1>
+     <form method="post">
+         {% csrf_token %}
+         <input type="text" name="title" placeholder="Task Title">
+         <button type="submit">Add</button>
+     </form>
+     <a href="{% url 'app:task_list' %}">Back to List</a>
+     <!-- <a href="/">Back to List</a> -->
+ </body>
+ </html>
