@@ -21,7 +21,6 @@ from app.api.views import *
 urlpatterns = [
     path("app/", include("app.urls")),
     path('admin/', admin.site.urls),
-    # path('api/', include('mysite.api.urls')),
     path('api/', AppViewSet.as_view(), name="something"),
     path('api/<int:task_id>/', AppViewSet.as_view(), name='delete_task'),  # DELETE
 ]

@@ -3,4 +3,4 @@ from rest_framework.routers import DefaultRouter
 from .views import AppViewSet
 
 post_router = DefaultRouter()
-post_router.register(r'app1', AppViewSet)
+post_router.register(r'api', AppViewSet)

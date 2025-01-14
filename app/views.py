@@ -3,7 +3,7 @@ from django.shortcuts import render, redirect
 from django.http import HttpResponse
 from .models import Task
 
-
+# Django side views
 # View for displaying tasks
 def task_list(request):
     tasks = Task.objects.all()
